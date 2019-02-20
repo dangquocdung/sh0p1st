@@ -1928,7 +1928,7 @@ class GetFunction
     $url       =   '';
     $settings  = $_this->option->getSettingsData(); 
     
-    $image_url   = url('/').'/public/images/';
+    $image_url   = url('/').'/images/';
     
     if(isset($settings['general_settings']['general_options']['site_logo']) && $settings['general_settings']['general_options']['site_logo']){
       $url = get_image_url($settings['general_settings']['general_options']['site_logo']);
