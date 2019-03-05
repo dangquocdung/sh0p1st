@@ -100,9 +100,9 @@
           @endif
         @endif
         
-      @if(Cart::is_coupon_applyed())  
+      {{-- @if(Cart::is_coupon_applyed())  
       <div class="cart-coupon"><div class="label">{!! trans('frontend.coupon_label') !!}:</div><div class="value">- {!! price_html( get_product_price_html_by_filter(Cart::couponPrice()), get_frontend_selected_currency() ) !!}</div> <div><button class="remove-coupon btn btn-default btn-xs" type="button">{!! trans('frontend.remove_coupon_label') !!}</button></div></div>
-      @endif
+      @endif --}}
       
       <div class="cart-grand-total"><div class="label">{{ trans('frontend.grand_total') }}:</div><div class="value">{!! price_html( get_product_price_html_by_filter(Cart::getCartTotal()), get_frontend_selected_currency() ) !!}</div></div>
   </div>
